@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>思诺的三年级 · 暑假计划</title>
+<style>
+:root{--coral:#e8656a;--coral-light:#fdf0f1;--sky:#5b9bd5;--sky-light:#eef4fa;--sun:#f7c948;--sun-light:#fef9e7;--mint:#6abf8b;--mint-light:#edf7f1;--lavender:#a68bc7;--lavender-light:#f4eef9;--ink:#2d2d3a;--grey:#8a8a96;--warm-bg:#fdfaf5;--card:#fff;--border:#ece8e0;--radius:16px;--shadow:0 2px 12px rgba(0,0,0,0.06);--font-fun:'PingFang SC','Microsoft YaHei',system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-fun);background:var(--warm-bg);color:var(--ink);line-height:1.8;-webkit-font-smoothing:antialiased}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+.sep{height:1px;background:var(--border);margin:40px 0}
+.hero{padding:56px 0 40px;text-align:center;background:linear-gradient(180deg,#fef9f0 0%,var(--warm-bg) 100%)}
+.hero h1{font-size:clamp(28px,5vw,40px);font-weight:800;line-height:1.25;margin-bottom:8px;background:linear-gradient(135deg,var(--coral),var(--lavender));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero .sub{font-size:16px;color:var(--grey);max-width:500px;margin:0 auto}
+.hero .byline{font-size:13px;color:var(--grey);margin-top:20px}
+.badge-row{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:20px}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:100px;font-size:13px;font-weight:600}
+.badge-coral{background:var(--coral-light);color:var(--coral)}
+.badge-sky{background:var(--sky-light);color:var(--sky)}
+.badge-sun{background:var(--sun-light);color:#b8860b}
+.badge-mint{background:var(--mint-light);color:#3a7d52}
+.hello-box{background:linear-gradient(135deg,var(--sun-light),var(--coral-light));border-radius:var(--radius);padding:28px 32px;margin:28px 0}
+.hello-box p{font-size:15px;color:#5a4a5a;line-height:1.9}
+.section{padding:32px 0}
+.sec-icon{font-size:30px;margin-bottom:2px}
+.sec-title{font-size:22px;font-weight:700;margin-bottom:4px}
+.sec-sub{font-size:14px;color:var(--grey);margin-bottom:20px}
+.cal-wrap{overflow-x:auto}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;min-width:640px}
+.cal-header{text-align:center;font-size:11px;font-weight:700;color:var(--grey);padding:6px 0}
+.cal-card{border-radius:12px;padding:14px 8px;min-height:120px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.cal-card .day{font-size:14px;font-weight:700;margin-bottom:6px}
+.cal-card .activity{font-size:11.5px;line-height:1.7}
+.cal-card .activity strong{font-size:12.5px}
+.cal-coral{background:var(--coral-light)}.cal-coral .day{color:var(--coral)}
+.cal-sky{background:var(--sky-light)}.cal-sky .day{color:var(--sky)}
+.cal-green{background:var(--mint-light)}.cal-green .day{color:var(--mint)}
+.cal-sun{background:var(--sun-light)}.cal-sun .day{color:#b8860b}
+.struct-bar{display:flex;border-radius:100px;overflow:hidden;margin:20px 0;height:48px}
+.struct-seg{display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:#fff}
+.struct-seg:nth-child(1){background:var(--lavender);flex:0 0 17%}
+.struct-seg:nth-child(2){background:var(--sky);flex:0 0 66%}
+.struct-seg:nth-child(3){background:var(--mint);flex:0 0 17%}
+.struct-desc{display:flex;gap:12px;margin-bottom:20px;font-size:12.5px;color:var(--grey)}
+.struct-desc span:nth-child(1){flex:0 0 17%}
+.struct-desc span:nth-child(2){flex:0 0 66%}
+.struct-desc span:nth-child(3){flex:0 0 17%}
+.card-grid{display:grid;gap:16px}
+.card-grid-3{grid-template-columns:1fr 1fr 1fr}
+.card-grid-2{grid-template-columns:1fr 1fr}
+.card{background:var(--card);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);border:1px solid var(--border)}
+.card-icon{font-size:28px;margin-bottom:8px}
+.card h4{font-size:16px;font-weight:700;margin-bottom:6px}
+.card p,.card li{font-size:13.5px;color:#4a4a5a;line-height:1.8}
+.card-tip{margin-top:12px;padding:10px 14px;border-radius:10px;font-size:13px;line-height:1.7}
+.tip-coral{background:var(--coral-light);color:#a0484d}
+.tip-sky{background:var(--sky-light);color:#3a6c9a}
+.tip-sun{background:var(--sun-light);color:#6a5a20}
+.tip-mint{background:var(--mint-light);color:#2d6a42}
+.tip-lav{background:var(--lavender-light);color:#5a3a7a}
+.book-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.book-card{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--border)}
+.book-top{padding:24px 20px 14px;text-align:center}
+.book-badge{display:inline-block;font-size:11px;letter-spacing:1.5px;font-weight:700;margin-bottom:8px}
+.book-badge.g2{color:var(--coral)}.book-badge.g3{color:var(--sky)}.book-badge.g45{color:var(--mint)}
+.book-emoji{font-size:36px;margin-bottom:4px}.book-name{font-size:17px;font-weight:700;margin-bottom:2px}.book-author{font-size:12px;color:var(--grey);margin-bottom:6px}
+.book-desc{font-size:12.5px;color:#5a5a6a;line-height:1.7;padding:0 20px 10px}
+.book-link{display:flex;align-items:center;justify-content:center;gap:6px;padding:10px 20px;margin:0 20px 16px;font-size:13px;font-weight:600;border-radius:100px;text-decoration:none;text-align:center}
+.blink-coral{background:var(--coral-light);color:var(--coral)}.blink-sky{background:var(--sky-light);color:var(--sky)}.blink-mint{background:var(--mint-light);color:var(--mint)}
+.poem-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.poem-item{padding:12px 16px;border-radius:12px;display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit}
+.poem-item .p-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.poem-item .p-text{font-size:14px}.poem-item .p-text .p-author{font-size:12px;color:var(--grey)}
+.poem-item .p-link{font-size:11px;margin-left:auto;color:var(--sky);flex-shrink:0}
+.poem-coral{background:var(--coral-light)}.poem-coral .p-dot{background:var(--coral)}
+.poem-sky{background:var(--sky-light)}.poem-sky .p-dot{background:var(--sky)}
+.timeline-v{position:relative;padding-left:24px}
+.timeline-v::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--border)}
+.tl-item{position:relative;padding:0 0 28px 20px}
+.tl-item::before{content:'';position:absolute;left:-20px;top:6px;width:12px;height:12px;border-radius:50%;border:2px solid;background:#fff}
+.tl-item.coral::before{border-color:var(--coral)}.tl-item.sky::before{border-color:var(--sky)}.tl-item.mint::before{border-color:var(--mint)}.tl-item.sun::before{border-color:#b8860b}.tl-item.lav::before{border-color:var(--lavender)}
+.tl-label{font-size:12px;letter-spacing:1px;font-weight:700;margin-bottom:2px}
+.tl-label.coral{color:var(--coral)}.tl-label.sky{color:var(--sky)}.tl-label.mint{color:var(--mint)}.tl-label.sun{color:#b8860b}.tl-label.lav{color:var(--lavender)}
+.tl-title{font-size:16px;font-weight:700;margin-bottom:4px}.tl-text{font-size:13.5px;color:#4a4a5a;line-height:1.7}
+.bili-section{background:linear-gradient(135deg,#f5f0ff,var(--sky-light));border-radius:var(--radius);padding:24px 28px;margin:20px 0}
+.bili-section h4{font-size:16px;font-weight:700;margin-bottom:10px}.bili-section p{font-size:13.5px;color:#4a4a5a;line-height:1.8}
+.bili-link{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:100px;font-size:13px;font-weight:600;text-decoration:none}
+.bili-pink{background:#fceeef;color:#e8656a}.bili-blue{background:var(--sky-light);color:var(--sky)}
+@media(max-width:640px){.card-grid-3,.card-grid-2,.poem-list{grid-template-columns:1fr}.book-grid{grid-template-columns:1fr}.cal-grid{min-width:auto}.hero{padding:40px 0 24px}.struct-bar{border-radius:12px;flex-direction:column;height:auto}.struct-seg{padding:8px}.struct-desc{display:none}}
+</style>
+</head>
+<body>
+<section class="hero"><div class="wrap">
+<div class="hero-stars">&#9733; &#9733; &#9733;</div>
+<h1>思诺的三年级计划</h1>
+<p class="sub">暑假到三年级结束，我们一起慢慢做的事</p>
+<div class="badge-row">
+<span class="badge badge-coral">&#128218; 读故事</span>
+<span class="badge badge-sky">&#127912; 动画学古诗</span>
+<span class="badge badge-sun">&#128214; 选想读的书</span>
+<span class="badge badge-mint">&#9997;&#65039; 写好字</span>
+</div>
+<p class="byline">创作者：River爸爸 &#183; 2026年6月</p>
+</div></section>
+<div class="wrap">
+<div class="hello-box">
+<p>&#128075; 嘿思诺，这是给你的暑假和三年级计划。<br><br>你知道吗？数学你连续两次考了全班第一，特别棒！<br>语文最近有一点小波动——这很正常，就像打游戏的时候，从简单关卡进入下一关之前，总会觉得&quot;有点难&quot;。<br><br><strong>其实就是因为你要升三年级了，语文要换一种学的方式。</strong>以前是老师带着你读、你跟着读；三年级开始，你要试着自己默读、自己读懂、自己说给别人听。<br>这一步早晚要走，<strong>我们一起慢慢走，不用着急。</strong><br><br>&#127800; 暑假开始，不急不停。</p>
+</div>
+<div class="sep"></div>
+<section class="section"><div class="sec-icon">&#128197;</div><h2 class="sec-title">我们的一周安排</h2><p class="sec-sub">每天做一点点，不用多，但坚持做。</p>
+<div class="cal-wrap"><div class="cal-grid">
+<div><div class="cal-header">一</div><div class="cal-card cal-coral"><div class="day">阅读日</div><div class="activity"><strong>30分钟</strong><br>读一本好看的书<br>抄3个好句子</div></div></div>
+<div><div class="cal-header">二</div><div class="cal-card cal-sky"><div class="day">古诗日</div><div class="activity"><strong>20分钟</strong><br>看动画学古诗<br>画一幅诗里的画</div></div></div>
+<div><div class="cal-header">三</div><div class="cal-card cal-coral"><div class="day">阅读日</div><div class="activity"><strong>30分钟</strong><br>读一本好看的书<br>抄3个好句子</div></div></div>
+<div><div class="cal-header">四</div><div class="cal-card cal-sky"><div class="day">古诗日</div><div class="activity"><strong>20分钟</strong><br>看动画学古诗<br>写几个漂亮字</div></div></div>
+<div><div class="cal-header">五</div><div class="cal-card cal-coral"><div class="day">阅读日</div><div class="activity"><strong>30分钟</strong><br>读一本好看的书<br>抄3个好句子</div></div></div>
+<div><div class="cal-header">六</div><div class="cal-card cal-sun"><div class="day">探索日</div><div class="activity"><strong>2小时</strong><br>去图书馆 / 书店<br>自己挑想看的书</div></div></div>
+<div><div class="cal-header">日</div><div class="cal-card cal-green"><div class="day">自由日</div><div class="activity">出去玩！<br>跑跑跳跳</div></div></div>
+</div></div></section>
+<div class="sep"></div>
+<section class="section"><div class="sec-icon">&#9201;&#65039;</div><h2 class="sec-title">阅读30分钟，可以这样过</h2><p class="sec-sub">一三五晚上，爸爸妈妈也拿书坐在你旁边——全家人一起读。</p>
+<div class="struct-bar"><div class="struct-seg">5' 准备</div><div class="struct-seg">20' 自己默读</div><div class="struct-seg">5' 分享</div></div>
+<div class="struct-desc"><span>翻到上次停的那一页，想想读到哪里了</span><span>不出声，在心里读</span><span>讲给爸爸妈妈听</span></div>
+<div class="card-grid card-grid-3">
+<div class="card"><div class="card-icon">&#128161;</div><h4>准备5分钟</h4><p>找到上次看到的那一页。想一想上次读到哪儿了？主角在做什么？脑子里过一遍，就像动画片开场前的&quot;前情提要&quot;。</p><div class="card-tip tip-sun">&#128161; 自己翻到那一页就好，不用别人帮忙找。</div></div>
+<div class="card"><div class="card-icon">&#128213;</div><h4>默读20分钟</h4><p>不出声，在心里读。如果忍不住念出声了，小声提醒自己&quot;在心里念&quot;。不需要读得飞快，<strong>读懂了就行</strong>——遇到不认识的字先猜，猜不出来再问。</p><div class="card-tip tip-sky">&#128170; 爸爸妈妈也在旁边读自己的书，你们是&quot;家庭阅读小分队&quot;！</div></div>
+<div class="card"><div class="card-icon">&#9997;&#65039;</div><h4>分享5分钟</h4><p><strong>先说：</strong>用两三句话讲给爸爸妈妈听——今天读的这一段讲了什么？<br><strong>再写：</strong>从书里挑3个你觉得特别美的词或者好玩的句子，抄下来。每个字都要认真写哦。</p><div class="card-tip tip-mint">&#9989; 写的时候记得笔顺——写对了才写得快。</div></div>
+</div></section>
+<div class="sep"></div>
+<section class="section"><div class="sec-icon">&#127912;</div><h2 class="sec-title">学古诗，先看动画</h2><p class="sec-sub">二四晚上，先看一段古诗动画，再把它画出来。</p>
+<div class="bili-section"><h4>&#128250; 古诗动画超好看</h4><p>不用干巴巴地背。在B站上，有一整套<strong>唐诗动画片</strong>——每首古诗都做成了动画，有画面、有故事、有讲解。先看动画，诗句里的意思就自然懂了，背起来也快很多。</p><p><a href="https://www.bilibili.com/bangumi/play/ss127222" target="_blank" class="bili-link bili-pink">&#9654; 点我看唐诗动画合集</a>&#160;&#160;<a href="https://www.bilibili.com/video/BV168j16MECf/" target="_blank" class="bili-link bili-blue">&#9654; 唐诗三百首唱游版</a></p></div>
+<h4 style="font-size:15px;margin-bottom:10px;">暑假可以从这几首开始（选6首喜欢的就行）</h4>
+<div class="poem-list">
+<a href="https://www.bilibili.com/video/BV1qGjG66Ekp/" target="_blank" class="poem-item poem-coral"><div class="p-dot"></div><div class="p-text"><strong>鸟鸣涧</strong><span class="p-author"> &#183; 王维</span></div><span class="p-link">&#9654;</span></a>
+<div class="poem-item poem-sky"><div class="p-dot"></div><div class="p-text"><strong>望庐山瀑布</strong><span class="p-author"> &#183; 李白</span></div></div>
+<div class="poem-item poem-sky"><div class="p-dot"></div><div class="p-text"><strong>绝句&#183;两个黄鹂</strong><span class="p-author"> &#183; 杜甫</span></div></div>
+<div class="poem-item poem-coral"><div class="p-dot"></div><div class="p-text"><strong>忆江南</strong><span class="p-author"> &#183; 白居易</span></div></div>
+<div class="poem-item poem-coral"><div class="p-dot"></div><div class="p-text"><strong>敕勒歌</strong><span class="p-author"> &#183; 北朝民歌</span></div></div>
+<div class="poem-item poem-sky"><div class="p-dot"></div><div class="p-text"><strong>山行</strong><span class="p-author"> &#183; 杜牧</span></div></div>
+<div class="poem-item poem-sky"><div class="p-dot"></div><div class="p-text"><strong>望天门山</strong><span class="p-author"> &#183; 李白</span></div></div>
+<div class="poem-item poem-coral"><div class="p-dot"></div><div class="p-text"><strong>饮湖上初晴后雨</strong><span class="p-author"> &#183; 苏轼</span></div></div>
+</div>
+<div class="card-tip tip-lav" style="margin-top:12px;">&#127912; 看完动画以后，画一幅诗里的画面——比如&quot;两个黄鹂鸣翠柳&quot;就画两只小鸟在绿色的柳树上唱歌。</div>
+</section>
+<div class="sep"></div>
+<section class="section"><div class="sec-icon">&#128218;</div><h2 class="sec-title">来看看这几本书，有你喜欢的吗？</h2><p class="sec-sub">勾出你想读的那本。先买1-2本，每读完一本在封面画一颗小星星。慢慢来，不着急。</p>
+<div class="bili-section" style="background:linear-gradient(135deg,var(--sun-light),var(--mint-light));"><h4>&#128250; 挑书之前，先在B站上&quot;看个预告&quot;</h4><p>很多经典童书在B站上有动画电影版或者有趣的故事视频。不知道想不想读这本书？<strong>先点下面的链接看几分钟视频</strong>——就像看电影之前先看预告片！</p></div>
+<div class="book-grid">
+<div class="book-card"><div class="book-top"><div class="book-badge g2">&#127775; 暑假起步</div><div class="book-emoji">&#128054;</div><div class="book-name">夏洛的网</div><div class="book-author">E.B.怀特</div></div><div class="book-desc">一只蜘蛛和一只小猪的故事。蜘蛛夏洛用她的网救了好朋友威尔伯——你会读到什么是真正的友谊。</div><a href="https://www.bilibili.com/bangumi/play/ep254197" target="_blank" class="book-link blink-coral">&#9654; 在B站看动画电影</a></div>
+<div class="book-card"><div class="book-top"><div class="book-badge g2">&#127775; 暑假起步</div><div class="book-emoji">&#127793;</div><div class="book-name">窗边的小豆豆</div><div class="book-author">黑柳彻子</div></div><div class="book-desc">一个被学校&quot;请退&quot;的小女孩，来到了一所奇怪的学校——电车就是教室！</div><a href="https://search.bilibili.com/all?keyword=%E7%AA%97%E8%BE%B9%E7%9A%84%E5%B0%8F%E8%B1%86%E8%B1%86%20%E6%95%85%E4%BA%8B" target="_blank" class="book-link blink-sky">&#9654; 在B站搜故事视频</a></div>
+<div class="book-card"><div class="book-top"><div class="book-badge g2">&#127775; 暑假起步</div><div class="book-emoji">&#127918;</div><div class="book-name">查理和巧克力工厂</div><div class="book-author">罗尔德&#183;达尔</div></div><div class="book-desc">五个孩子抽中了金券，去参观一个全世界最神奇的巧克力工厂——里面有一条巧克力河！</div><a href="https://search.bilibili.com/all?keyword=%E6%9F%A5%E7%90%86%E5%92%8C%E5%B7%A7%E5%85%8B%E5%8A%9B%E5%B7%A5%E5%8E%82%20%E5%8A%A8%E7%94%BB" target="_blank" class="book-link blink-mint">&#9654; 在B站看预告</a></div>
+<div class="book-card"><div class="book-top"><div class="book-badge g3">&#127754; 三年级拓展</div><div class="book-emoji">&#127754;</div><div class="book-name">长袜子皮皮</div><div class="book-author">林格伦</div></div><div class="book-desc">一个红头发、满脸雀斑的女孩，力气大得能举起一匹马！她一个人住在一栋房子里。</div><a href="https://search.bilibili.com/all?keyword=%E9%95%BF%E8%A2%9C%E5%AD%90%E7%9A%AE%E7%9A%AE%20%E5%8A%A8%E7%94%BB" target="_blank" class="book-link blink-coral">&#9654; 在B站搜来看看</a></div>
+<div class="book-card"><div class="book-top"><div class="book-badge g3">&#127754; 三年级拓展</div><div class="book-emoji">&#129504;</div><div class="book-name">没头脑和不高兴</div><div class="book-author">任溶溶</div></div><div class="book-desc">&quot;没头脑&quot;做事丢三落四，&quot;不高兴&quot;做什么都不开心。有一天他们突然变大了——闹出了一堆大笑话！</div><a href="https://search.bilibili.com/all?keyword=%E6%B2%A1%E5%A4%B4%E8%84%91%E5%92%8C%E4%B8%8D%E9%AB%98%E5%85%B4%20%E5%8A%A8%E7%94%BB" target="_blank" class="book-link blink-sky">&#9654; 在B站找动画</a></div>
+<div class="book-card"><div class="book-top"><div class="book-badge g3">&#127754; 三年级拓展</div><div class="book-emoji">&#129420;</div><div class="book-name">青蛙和蟾蜍</div><div class="book-author">艾诺&#183;洛贝尔</div></div><div class="book-desc">一只青蛙和一只蟾蜍是最好的朋友。青蛙总是笑眯眯的，蟾蜍总是有点闷闷的——他们在一起的每一天都很有趣。</div><a href="https://search.bilibili.com/all?keyword=%E9%9D%92%E8%9B%99%E5%92%8C%E8%9F%BE%E8%9C%8D%20%E6%95%85%E4%BA%8B" target="_blank" class="book-link blink-mint">&#9654; 在B站搜故事</a></div>
+</div></section>
+<div class="sep"></div>
+<section class="section"><div class="sec-icon">&#9997;&#65039;</div><h2 class="sec-title">练一手好字</h2><p class="sec-sub">每天只写3个，每个字都认真写好。</p>
+<div class="card-grid card-grid-2">
+<div class="card"><div class="card-icon">&#128203;</div><h4>准备一个漂亮本子</h4><p>买一本你喜欢的本子，作为你的&quot;好词好句收集本&quot;——每次读完书，从书里挑<strong>3个你觉得特别好的词或句子</strong>抄上去。一个暑假下来，你能攒下100多个好词好句！</p><div class="card-tip tip-lav">&#127800; 选一本封面你喜欢的本子——每次打开它都会很开心。</div></div>
+<div class="card"><div class="card-icon">&#128270;</div><h4>写好字的两个小秘诀</h4><p><strong>秘诀一：笔顺写对。</strong>先写哪一笔后写哪一笔很重要——写对了才写得快。<br><strong>秘诀二：把字写稳。</strong>一个字就像一个人站在格子里，不能歪。慢慢写，找感觉。</p><div class="card-tip tip-sky">&#128221; 写的时候你妈妈可以教你笔顺——她写字很厉害！</div></div>
+</div></section>
+<div class="sep"></div>
+<section class="section"><div class="sec-icon">&#128172;</div><h2 class="sec-title">说说你的事</h2><p class="sec-sub">爸爸妈妈也想听听你的想法，不紧张，随便说。</p>
+<div class="card-grid card-grid-3">
+<div class="card"><div class="card-icon">&#128218;</div><h4>读完书</h4><p>读完以后，爸爸妈妈会问你&quot;今天读了什么？&quot;——用两句话说清楚就行，说大概就行。</p></div>
+<div class="card"><div class="card-icon">&#127881;</div><h4>周末吃饭时</h4><p>说说这一周最好玩的一件事，再说三个理由——为什么觉得好玩？</p></div>
+<div class="card"><div class="card-icon">&#127916;</div><h4>看完动画</h4><p>爸爸妈妈会问你&quot;主角为什么要这么做？如果换成你，你会怎么做？&quot;</p></div>
+</div></section>
+<div class="sep"></div>
+<section class="section"><div class="sec-icon">&#128200;</div><h2 class="sec-title">开学以后呢？</h2><p class="sec-sub">暑假的习惯不要断——开学后时间短了，但做着做着就习惯了。</p>
+<div class="timeline-v">
+<div class="tl-item coral"><div class="tl-label coral">节奏不变</div><div class="tl-title">还是135读课外书，24读古诗</div><div class="tl-text">开学后晚上的时间短了，30分钟可以变成20分钟——但不用停。每天做20分钟，比&quot;今天太忙了不做了&quot;要好十倍。</div></div>
+<div class="tl-item sky"><div class="tl-label sky">看试卷</div><div class="tl-title">每次考试后一起看看</div><div class="tl-text">每次语文考试后，和爸爸妈妈一起看一下：错的地方是字写错了？还是题目没看懂？分类记下来。是为了看看&quot;哪一关要再练练&quot;。</div></div>
+<div class="tl-item mint"><div class="tl-label mint">最酷的事</div><div class="tl-title">每周五的&quot;家庭读书分享会&quot;</div><div class="tl-text">每周五晚上用5分钟，讲讲你这周读的书里最好玩的片段。爸爸妈妈也讲他们读的——你们是&quot;家庭阅读俱乐部&quot;的成员。</div></div>
+<div class="tl-item sun"><div class="tl-label sun">数学不要丢</div><div class="tl-title">你的数学超棒</div><div class="tl-text">数学你能连续考全班第一，说明你的脑子特别灵。读语文的时候不用怕——那只是换一种方式用你的聪明劲。</div></div>
+<div class="tl-item lav"><div class="tl-label lav">最后一句话</div><div class="tl-title">偶尔没考好也没关系</div><div class="tl-text">三年级还会遇到语文考试没考好的时候。很正常，每个人都会遇到。妈妈小时候也经历过——不信你问她。</div></div>
+</div></section>
+<div class="sep"></div>
+<div style="text-align:center;padding:40px 0 48px;"><p style="font-size:24px;font-weight:700;margin-bottom:12px;">&#127775; 思诺加油 &#127775;</p><p style="font-size:14px;color:var(--grey);">创作者：River爸爸 &#183; 2026年6月 &#183; 仅供参考</p></div>
+</div>
+</body>
+</html>
